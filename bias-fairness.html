@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bias & Fairness in Speech Recognition | Ridwan Bello</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/flowbite@2.3.0/dist/flowbite.js"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Gradient Banner -->
+  <div class="w-full h-24 bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 flex items-center justify-center">
+    <div class="text-center">
+      <h1 class="text-3xl font-bold text-white">Ridwan Bello</h1>
+      <p class="text-white text-sm">PhD Student in Machine Learning & AI</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="bg-white border-b shadow p-4 flex justify-center space-x-6">
+    <a href="index.html" class="font-medium text-gray-700 hover:text-blue-700">Welcome</a>
+    <a href="about.html" class="font-medium text-gray-700 hover:text-blue-700">CV</a>
+    <a href="research.html" class="font-medium text-blue-700 hover:underline">Research</a>
+    <a href="industry.html" class="font-medium text-gray-700 hover:text-blue-700">Industry</a>
+    <a href="skills.html" class="font-medium text-gray-700 hover:text-blue-700">Skills</a>
+    <a href="publications.html" class="font-medium text-gray-700 hover:text-blue-700">Publications</a>
+    <a href="contact.html" class="font-medium text-gray-700 hover:text-blue-700">Contact</a>
+  </nav>
+
+    <!-- Breadcrumbs -->
+    <nav class="flex px-5 py-3 text-gray-700 bg-gray-50 border-b" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+        <li class="inline-flex items-center">
+            <a href="index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600">
+            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 2a1 1 0 00-.71.29l-7 7a1 1 0 001.42 1.42L4 10.41V17a1 1 0 001 1h3a1 1 0 001-1v-3h2v3a1 1 0 001 1h3a1 1 0 001-1v-6.59l.29.3a1 1 0 001.42-1.42l-7-7A1 1 0 0010 2z"/>
+            </svg>
+            Home
+            </a>
+        </li>
+        <li>
+            <div class="flex items-center">
+            <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M7.05 4.05a7 7 0 019.9 9.9L7.05 4.05zM5.64 5.64L4.22 7.05a7 7 0 009.9 9.9l-1.41-1.42a5 5 0 11-7.07-7.07z"/>
+            </svg>
+            <a href="research.html" class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2">Research</a>
+            </div>
+        </li>
+        <li aria-current="page">
+            <div class="flex items-center">
+            <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M7.05 4.05a7 7 0 019.9 9.9L7.05 4.05zM5.64 5.64L4.22 7.05a7 7 0 009.9 9.9l-1.41-1.42a5 5 0 11-7.07-7.07z"/>
+            </svg>
+            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2">Bias & Fairness in Speech Recognition</span>
+            </div>
+        </li>
+        </ol>
+    </nav>
+
+  <!-- Main Section -->
+  <section class="max-w-5xl mx-auto p-8">
+    <h2 class="text-3xl font-bold mb-4">Bias & Fairness in Speech Recognition</h2>
+
+    <!-- Objective -->
+    <h3 class="text-2xl font-semibold mt-6 mb-2">Objective</h3>
+    <p>
+      This project investigates bias and fairness challenges in automatic speech recognition (ASR) systems, particularly when processing African-accented English speech. The goal is to identify disparities in ASR performance across demographic groups and develop fairness-aware training strategies to mitigate bias.
+    </p>
+
+    <!-- Role & Contributions -->
+    <h3 class="text-2xl font-semibold mt-6 mb-2">Role & Contributions</h3>
+    <p>
+      I am leading the experimental design and fairness evaluation strategy, including:
+    </p>
+    <ul class="list-disc list-inside mt-2 space-y-2">
+      <li>Dataset auditing to analyze representation across accents, genders, and age groups.</li>
+      <li>Defining fairness metrics (e.g., error rate disparity, equalized odds).</li>
+      <li>Training and comparing baseline vs. fairness-aware ASR models.</li>
+      <li>Documenting findings and proposing improvements to mitigate bias.</li>
+    </ul>
+
+    <!-- Technologies & Methodologies -->
+    <h3 class="text-2xl font-semibold mt-6 mb-2">Technologies & Methodologies</h3>
+    <ul class="list-disc list-inside mt-2 space-y-2">
+      <li>Python, TensorFlow, Hugging Face Transformers</li>
+      <li>Fairness libraries: Fairlearn, AIF360</li>
+      <li>Statistical analysis & visualization: Pandas, Seaborn, Matplotlib</li>
+      <li>ASR models: Wav2Vec2, Whisper</li>
+    </ul>
+
+    <!-- Outcomes & Impact -->
+    <h3 class="text-2xl font-semibold mt-6 mb-2">Outcomes & Impact</h3>
+    <p>
+      This is an ongoing project. Initial results indicate notable disparities in word error rates (WER) between different accent groups, reinforcing the need for fairness-aware training. The anticipated impact includes improved fairness in ASR systems and contributions to the broader field of ethical AI.
+    </p>
+
+   
+    <!-- Publications / Presentations -->
+    <h3 class="text-2xl font-semibold mt-6 mb-2">Related Publications & Presentations</h3>
+    <p class="text-gray-600 italic">
+      Publications and presentations will be added upon project completion.
+    </p>
+  </section>
+
+<!-- Footer -->
+<footer class="bg-gray-100 px-6 py-4 mt-8 text-sm text-gray-500">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+      <p>© 2025 Ridwan Bello. All rights reserved.</p>
+      <div class="flex space-x-4 mt-2 sm:mt-0">
+        <a href="https://x.com/rolubello2" target="_blank" class="text-blue-500 hover:text-blue-700">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ridwan-o-bello/" target="_blank" class="text-blue-700 hover:text-blue-900">
+          <i data-lucide="linkedin" class="w-5 h-5"></i>
+        </a>
+        <a href="https://wa.me/+16592109230" target="_blank" class="text-green-500 hover:text-green-700">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 32 32">
+                <path d="M16 2.933C8.82 2.933 2.933 8.82 2.933 16c0 2.82.827 5.426 2.25 7.624L4 30l6.707-1.707A13.03 13.03 0 0016 29.067c7.18 0 13.067-5.887 13.067-13.067S23.18 2.933 16 2.933zm0 23.467a10.37 10.37 0 01-5.273-1.46l-.377-.22-3.987 1.013 1.06-3.89-.244-.4A10.098 10.098 0 015.933 16c0-5.577 4.49-10.067 10.067-10.067S26.067 10.423 26.067 16 21.577 26.4 16 26.4zm5.483-7.05c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37 0-.52-.05-.15-.68-1.63-.93-2.23-.25-.6-.5-.5-.68-.5h-.58c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.48s1.08 2.88 1.23 3.08c.15.2 2.14 3.28 5.2 4.6.73.32 1.3.5 1.75.64.74.24 1.4.2 1.92.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.28-.2-.58-.35z"/>
+              </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Add Lucide icon script -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>
