@@ -6,6 +6,34 @@
   <title>Research | Ridwan Bello</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/flowbite@2.3.0/dist/flowbite.js"></script>
+
+  <!-- Dark Mode Script -->
+  <script>
+    // Apply saved preference immediately to avoid flash
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+  <style>
+    html.dark body { background-color: #111827; color: #f3f4f6; }
+    html.dark nav { background-color: #1f2937 !important; border-color: #374151 !important; }
+    html.dark footer { background-color: #1f2937 !important; color: #9ca3af !important; }
+    html.dark .border { border-color: #374151 !important; }
+    html.dark .border-b { border-color: #374151 !important; }
+    html.dark .bg-white { background-color: #1f2937 !important; }
+    html.dark .bg-gray-50 { background-color: #111827 !important; }
+    html.dark .bg-gray-100 { background-color: #1f2937 !important; }
+    html.dark .bg-blue-50 { background-color: #1e3a5f !important; }
+    html.dark .bg-green-50 { background-color: #14532d !important; }
+    html.dark .bg-purple-50 { background-color: #3b0764 !important; }
+    html.dark .text-gray-800 { color: #f3f4f6 !important; }
+    html.dark .text-gray-700 { color: #d1d5db !important; }
+    html.dark .text-gray-600 { color: #9ca3af !important; }
+    html.dark .text-gray-500 { color: #6b7280 !important; }
+    html.dark .shadow { box-shadow: 0 1px 3px rgba(0,0,0,0.5) !important; }
+    html.dark input, html.dark textarea { background-color: #374151 !important; color: #f3f4f6 !important; border-color: #4b5563 !important; }
+    html.dark .border-gray-300 { border-color: #4b5563 !important; }
+  </style>
 </head>
 <body class="bg-white text-gray-800">
 
@@ -26,6 +54,20 @@
     <a href="skills.html" class="font-medium text-gray-700 hover:text-blue-700">Skills</a>
     <a href="publications.html" class="font-medium text-gray-700 hover:text-blue-700">Publications</a>
     <a href="contact.html" class="font-medium text-gray-700 hover:text-blue-700">Contact</a>
+      <button id="darkToggle" onclick="toggleDark()" class="ml-4 p-1.5 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium transition" title="Toggle dark mode">
+      <span id="darkIcon">🌙</span>
+    </button>
+    <script>
+      function toggleDark() {
+        const isDark = document.documentElement.classList.toggle('dark');
+        localStorage.setItem('darkMode', isDark);
+        document.getElementById('darkIcon').textContent = isDark ? '☀️' : '🌙';
+      }
+      // Set correct icon on load
+      if (localStorage.getItem('darkMode') === 'true') {
+        document.getElementById('darkIcon').textContent = '☀️';
+      }
+    </script>
   </nav>
 
   <!-- Main Section -->
